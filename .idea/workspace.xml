@@ -115,7 +115,7 @@
       <workItem from="1583077821588" duration="4582000" />
       <workItem from="1583144133125" duration="10446000" />
       <workItem from="1583254435757" duration="7350000" />
-      <workItem from="1583324719689" duration="618000" />
+      <workItem from="1583324719689" duration="929000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit with .gitignore">
       <created>1583325047678</created>
@@ -145,7 +145,28 @@
       <option name="project" value="LOCAL" />
       <updated>1583325343230</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add Main java class">
+      <created>1583325403189</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583325403189</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add Controller class">
+      <created>1583325428882</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1583325428882</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add Validator class">
+      <created>1583325655830</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1583325655830</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +177,10 @@
     <MESSAGE value="Modified .gitignore" />
     <MESSAGE value="Add .idea files" />
     <MESSAGE value="Add style files (.fxml and css + image)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add style files (.fxml and css + image)" />
+    <MESSAGE value="Add Main java class" />
+    <MESSAGE value="Add Controller class" />
+    <MESSAGE value="Add Validator class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Validator class" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582976047712">
@@ -171,10 +195,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1583145301671" />
-    <state x="524" y="120" key="CommitChangelistDialog2" timestamp="1583325428600">
+    <state x="524" y="120" key="CommitChangelistDialog2" timestamp="1583325655541">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="524" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1583325428600" />
+    <state x="524" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1583325655541" />
     <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1582984792208">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
