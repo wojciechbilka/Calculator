@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ee152eac-30ce-47bd-a757-434d1253144e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +61,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Wojtas\IdeaProjects\Calculator_Application\.idea" />
       <recent name="C:\Users\Wojtas\IdeaProjects\Calculator_Application\src" />
       <recent name="C:\Users\Wojtas\IdeaProjects\Calculator_Application\src\main\resources\style" />
       <recent name="C:\Users\Wojtas\IdeaProjects\Calculator_Application\src\main\resources" />
@@ -118,7 +119,7 @@
       <workItem from="1583077821588" duration="4582000" />
       <workItem from="1583144133125" duration="10446000" />
       <workItem from="1583254435757" duration="7350000" />
-      <workItem from="1583324719689" duration="1183000" />
+      <workItem from="1583324719689" duration="1633000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit with .gitignore">
       <created>1583325047678</created>
@@ -190,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583325820219</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Update .gitignore">
+      <created>1583325931660</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1583325931660</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +215,8 @@
     <MESSAGE value="Add enum for button identification" />
     <MESSAGE value="Add pom file" />
     <MESSAGE value="Add iml file with module configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add iml file with module configuration" />
+    <MESSAGE value="Update .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update .gitignore" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582976047712">
@@ -222,10 +231,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1583145301671" />
-    <state x="524" y="120" key="CommitChangelistDialog2" timestamp="1583325841889">
+    <state x="524" y="120" key="CommitChangelistDialog2" timestamp="1583325931359">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="524" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1583325841889" />
+    <state x="524" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1583325931359" />
     <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1582984792208">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -266,6 +275,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="440" y="98" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1582984921494" />
+    <state x="552" y="245" key="Vcs.Push.Dialog.v2" timestamp="1583325966729">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="245" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1583325966729" />
     <state x="655" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1583324742987">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
