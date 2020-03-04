@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ee152eac-30ce-47bd-a757-434d1253144e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\Wojtas\IdeaProjects\Calculator_Application\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YTl7VsEdolU65fs3HDJRuM9Xy1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/style/window_structure.fxml" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Wojtas\IdeaProjects\Calculator_Application\src" />
+      <recent name="C:\Users\Wojtas\IdeaProjects\Calculator_Application\src\main\resources\style" />
+      <recent name="C:\Users\Wojtas\IdeaProjects\Calculator_Application\src\main\resources" />
+      <recent name="C:\Users\Wojtas\IdeaProjects\Calculator_Application\src\main\resources\images" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MainApp">
+    <configuration name="LayoutTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="calculator.LayoutTest" />
+      <module name="Calculator_Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="calculator.MainApp" />
+      <module name="Calculator_Application" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;E:\Programy\javafx-sdk-11.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml,javafx.graphics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainApp" />
+        <item itemvalue="Application.LayoutTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ee152eac-30ce-47bd-a757-434d1253144e" name="Default Changelist" comment="" />
+      <created>1582974297838</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582974297838</updated>
+      <workItem from="1582974301090" duration="2660000" />
+      <workItem from="1582977850117" duration="26557000" />
+      <workItem from="1583067534670" duration="5232000" />
+      <workItem from="1583077821588" duration="4582000" />
+      <workItem from="1583144133125" duration="10446000" />
+      <workItem from="1583254435757" duration="7350000" />
+      <workItem from="1583324719689" duration="291000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582976047712">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1582976047712" />
+    <state x="740" y="229" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1582975641919">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="229" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1582975641919" />
+    <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1583145301671">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1583145301671" />
+    <state x="524" y="120" key="CommitChangelistDialog2" timestamp="1583325184639">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="524" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1583325184639" />
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1582984792208">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1582984792208" />
+    <state width="938" height="280" key="GridCell.Tab.0.bottom" timestamp="1583324908723">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="938" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1583324908723" />
+    <state width="938" height="280" key="GridCell.Tab.0.center" timestamp="1583324908722">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="938" height="280" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1583324908722" />
+    <state width="938" height="280" key="GridCell.Tab.0.left" timestamp="1583324908722">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="938" height="280" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1583324908722" />
+    <state width="938" height="280" key="GridCell.Tab.0.right" timestamp="1583324908722">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="938" height="280" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1583324908722" />
+    <state width="938" height="346" key="GridCell.Tab.1.bottom" timestamp="1583261795249">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="938" height="346" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1583261795249" />
+    <state width="938" height="346" key="GridCell.Tab.1.center" timestamp="1583261795249">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="938" height="346" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1583261795249" />
+    <state width="938" height="346" key="GridCell.Tab.1.left" timestamp="1583261795249">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="938" height="346" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1583261795249" />
+    <state width="938" height="346" key="GridCell.Tab.1.right" timestamp="1583261795249">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="938" height="346" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1583261795249" />
+    <state x="440" y="98" key="SettingsEditor" timestamp="1582984921494">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="440" y="98" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1582984921494" />
+    <state x="655" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1583324742987">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="655" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583324742987" />
+    <state x="657" y="257" width="606" height="536" key="find.popup" timestamp="1583147128393">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="657" y="257" width="606" height="536" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1583147128393" />
+    <state x="342" y="226" key="new project wizard" timestamp="1582976962392">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="342" y="226" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1582976962392" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1582992518114">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1582992518114" />
+  </component>
+</project>
