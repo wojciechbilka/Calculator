@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee152eac-30ce-47bd-a757-434d1253144e" name="Default Changelist" comment="" />
+    <list default="true" id="ee152eac-30ce-47bd-a757-434d1253144e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,7 +118,7 @@
       <workItem from="1583077821588" duration="4582000" />
       <workItem from="1583144133125" duration="10446000" />
       <workItem from="1583254435757" duration="7350000" />
-      <workItem from="1583324719689" duration="929000" />
+      <workItem from="1583324719689" duration="1183000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit with .gitignore">
       <created>1583325047678</created>
@@ -166,7 +169,28 @@
       <option name="project" value="LOCAL" />
       <updated>1583325655830</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add enum for button identification">
+      <created>1583325701145</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1583325701145</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add pom file">
+      <created>1583325721904</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1583325721904</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add iml file with module configuration">
+      <created>1583325820219</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1583325820219</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +204,10 @@
     <MESSAGE value="Add Main java class" />
     <MESSAGE value="Add Controller class" />
     <MESSAGE value="Add Validator class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Validator class" />
+    <MESSAGE value="Add enum for button identification" />
+    <MESSAGE value="Add pom file" />
+    <MESSAGE value="Add iml file with module configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add iml file with module configuration" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582976047712">
@@ -195,10 +222,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1583145301671" />
-    <state x="524" y="120" key="CommitChangelistDialog2" timestamp="1583325726569">
+    <state x="524" y="120" key="CommitChangelistDialog2" timestamp="1583325841889">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="524" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1583325726569" />
+    <state x="524" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1583325841889" />
     <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1582984792208">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
