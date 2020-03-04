@@ -18,6 +18,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Wojciech Biłka &lt;wojciech.bilka@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IgnoredFileRootStore">
@@ -110,12 +115,48 @@
       <workItem from="1583077821588" duration="4582000" />
       <workItem from="1583144133125" duration="10446000" />
       <workItem from="1583254435757" duration="7350000" />
-      <workItem from="1583324719689" duration="291000" />
+      <workItem from="1583324719689" duration="618000" />
     </task>
+    <task id="LOCAL-00001" summary="Init Commit with .gitignore">
+      <created>1583325047678</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583325047678</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Modified .gitignore">
+      <created>1583325184884</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583325184884</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add .idea files">
+      <created>1583325208840</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583325208840</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add style files (.fxml and css + image)">
+      <created>1583325343230</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1583325343230</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init Commit with .gitignore" />
+    <MESSAGE value="Modified .gitignore" />
+    <MESSAGE value="Add .idea files" />
+    <MESSAGE value="Add style files (.fxml and css + image)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add style files (.fxml and css + image)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582976047712">
@@ -130,10 +171,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1583145301671" />
-    <state x="524" y="120" key="CommitChangelistDialog2" timestamp="1583325208590">
+    <state x="524" y="120" key="CommitChangelistDialog2" timestamp="1583325342921">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="524" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1583325208590" />
+    <state x="524" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1583325342921" />
     <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1582984792208">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
