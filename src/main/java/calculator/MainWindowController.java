@@ -2,6 +2,7 @@ package calculator;
 
 import calculator.logic.ButtonIdentifier;
 import calculator.logic.CalcValidator;
+import calculator.logic.ResultAnalyzer;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -63,6 +64,11 @@ public class MainWindowController {
         updateDisplay();
     }
 
+    @FXML
+    private void result() {
+        ResultAnalyzer result = new ResultAnalyzer(validator.getResult());
+        result.parse();
+    }
     private ButtonIdentifier getButtonIdentifier(ActionEvent event){
         Button sourceButton = (Button) event.getSource();
         return buttonMap.get(sourceButton.getId());

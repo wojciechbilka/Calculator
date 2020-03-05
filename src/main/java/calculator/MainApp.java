@@ -1,5 +1,6 @@
 package calculator;
 
+import calculator.logic.Equation;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -31,9 +32,11 @@ public class MainApp extends Application {
         stage.getIcons().add(image);
         stage.show();
 
-        String textString = "asdasdasd+asdasdasd*asdasdasd-asdasd/asdasd+asdasd,asd";
-        String[] textArray = textString.split("[+\\-*/]");
-        System.out.println(Arrays.toString(textArray));
+        Equation asd = new Equation();
+        asd.addNewElement("123");
+        System.out.println(asd.getLastElement());
+        asd.appendToBeginningOfElement("-");
+        System.out.println(asd.getLastElement());
 
         /*GridPane.setFillWidth(, true);
         GridPane.setFillHeight(myButton, true);*/
