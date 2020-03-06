@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee152eac-30ce-47bd-a757-434d1253144e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/logic/CalcValidatorAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/logic/Equation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/logic/ResultAnalyzer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/MainApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/calculator/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/MainWindowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/calculator/logic/ButtonIdentifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/logic/ButtonIdentifier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/calculator/logic/CalcValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/logic/CalcValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/logic/Equation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/logic/Equation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/style/structure.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/style/structure.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +125,9 @@
       <workItem from="1583254435757" duration="7350000" />
       <workItem from="1583324719689" duration="6194000" />
       <workItem from="1583333562583" duration="2537000" />
-      <workItem from="1583399573536" duration="16383000" />
+      <workItem from="1583399573536" duration="17286000" />
+      <workItem from="1583435564732" duration="1021000" />
+      <workItem from="1583496281020" duration="3666000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit with .gitignore">
       <created>1583325047678</created>
@@ -228,7 +227,42 @@
       <option name="project" value="LOCAL" />
       <updated>1583326820783</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add Equation class as new changed data type.">
+      <created>1583416071978</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1583416071978</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Update Validator for new data type (Equation)">
+      <created>1583416110909</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1583416110909</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add new enum for proper messages from valid methods.">
+      <created>1583416154678</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1583416154678</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Changed ButtonIdentifier field to String">
+      <created>1583416196290</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1583416196290</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Modifications according new Equation concept">
+      <created>1583416233475</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1583416233475</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,7 +282,12 @@
     <MESSAGE value="Update .gitignore" />
     <MESSAGE value="Update .gitignore (new location)" />
     <MESSAGE value="Add enum with mathematical operations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add enum with mathematical operations" />
+    <MESSAGE value="Add Equation class as new changed data type." />
+    <MESSAGE value="Update Validator for new data type (Equation)" />
+    <MESSAGE value="Add new enum for proper messages from valid methods." />
+    <MESSAGE value="Changed ButtonIdentifier field to String" />
+    <MESSAGE value="Modifications according new Equation concept" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modifications according new Equation concept" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582976047712">
@@ -263,30 +302,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1583327264301" />
-    <state x="524" y="120" key="CommitChangelistDialog2" timestamp="1583416195971">
+    <state x="524" y="120" key="CommitChangelistDialog2" timestamp="1583416233217">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="524" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1583416195971" />
+    <state x="524" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1583416233217" />
     <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1583326688303">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1583326688303" />
-    <state width="938" height="280" key="GridCell.Tab.0.bottom" timestamp="1583415919703">
+    <state width="938" height="280" key="GridCell.Tab.0.bottom" timestamp="1583436586949">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="938" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1583415919703" />
-    <state width="938" height="280" key="GridCell.Tab.0.center" timestamp="1583415919703">
+    <state width="938" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1583436586949" />
+    <state width="938" height="280" key="GridCell.Tab.0.center" timestamp="1583436586949">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="938" height="280" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1583415919703" />
-    <state width="938" height="280" key="GridCell.Tab.0.left" timestamp="1583415919703">
+    <state width="938" height="280" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1583436586949" />
+    <state width="938" height="280" key="GridCell.Tab.0.left" timestamp="1583436586949">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="938" height="280" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1583415919703" />
-    <state width="938" height="280" key="GridCell.Tab.0.right" timestamp="1583415919703">
+    <state width="938" height="280" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1583436586949" />
+    <state width="938" height="280" key="GridCell.Tab.0.right" timestamp="1583436586949">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="938" height="280" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1583415919703" />
+    <state width="938" height="280" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1583436586949" />
     <state width="938" height="346" key="GridCell.Tab.1.bottom" timestamp="1583261795249">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -307,14 +346,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="440" y="98" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1582984921494" />
-    <state x="552" y="245" key="Vcs.Push.Dialog.v2" timestamp="1583326459237">
+    <state x="552" y="245" key="Vcs.Push.Dialog.v2" timestamp="1583416255646">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="245" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1583326459237" />
-    <state x="655" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1583399951488">
+    <state x="552" y="245" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1583416255646" />
+    <state x="655" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1583496388793">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="655" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583399951488" />
+    <state x="655" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583496388793" />
+    <state x="769" y="441" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583499099164">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="769" y="441" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1583499099164" />
     <state x="657" y="257" width="606" height="536" key="find.popup" timestamp="1583147128393">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

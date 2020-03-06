@@ -45,7 +45,7 @@ public class CalcValidator {
         } else {
             currentEquation.addNewElement("-");
         }
-        System.out.println("negate() invoked: " + currentEquation.getLastElement() + "   " + currentEquation.getSize());
+        System.out.println("negate() invoked: " + "last element is:" + currentEquation.getLastElement() + "  list size: " + currentEquation.getSize());
     }
 
     public void addNumber(ButtonIdentifier btnId) {
@@ -59,6 +59,7 @@ public class CalcValidator {
                 currentEquation.addNewElement(btnId.getString());
                 break;
         }
+        System.out.println("addNumber() invoked: " + "last element is:" + currentEquation.getLastElement() + "  list size: " + currentEquation.getSize());
     }
 
     private CalcValidatorAction validNumber(ButtonIdentifier btnId) {
@@ -88,10 +89,10 @@ public class CalcValidator {
                 break;
             default:
                 action = CalcValidatorAction.NO_ACTION;
-                System.out.println("validNumber() invoked : " + action + "ATTENTION! default switch case used!");
+                System.out.println("validNumber() invoked: " + action + "ATTENTION! default switch case used!");
                 return action;
         }
-        System.out.println("validNumber() invoked : " + action);
+        System.out.println("validNumber() invoked: " + action);
         return action;
     }
 
@@ -106,6 +107,7 @@ public class CalcValidator {
                 currentEquation.addNewElement(btnId.getString());
                 break;
         }
+        System.out.println("addOperation() invoked: " + "last element is:" + currentEquation.getLastElement() + "  list size: " + currentEquation.getSize());
     }
 
     private CalcValidatorAction validOperation(ButtonIdentifier btnId) {
@@ -120,81 +122,68 @@ public class CalcValidator {
                 break;
             default:
                 action = CalcValidatorAction.NO_ACTION;
-                System.out.println("validOperation() invoked : " + action + "ATTENTION! default switch case used!");
+                System.out.println("validOperation() invoked: " + action + "ATTENTION! default switch case used!");
                 return action;
         }
-        System.out.println("validOperaion() invoked : " + action);
+        System.out.println("validOperation() invoked: " + action);
         return action;
     }
 
+    // czy dodać tu również walidacje clearAll??? (chyba nie...)
     public void clearAll() {
-        result.delete(0, result.length());
-    }
+        currentEquation.deleteAllElements();
+        System.out.println("clearAll() invoked: " + "last element is:" + currentEquation.getLastElement() + "  list size: " + currentEquation.getSize());
 
-    public void clearEquation() {
-        if (validClearEquation()) {
-            result.delete(getLastNumberBeginningIndex() + 1, result.length());
-        }
     }
-
-    private boolean validClearEquation() {
-        if (lastChar != null && result.length() > 0 && !"+-/*".contains(lastChar.toString())) {
-            String lastNumber = getLastStringAfterRegex(result.toString(), "[+\\-*/]");
-            if (lastNumber.matches("[0-9]+.*")) {
-                return true;
-            }
+    // czy dodać tu również walidacje clearEntry???
+    public void clearEntry() {
+        if (isNumber(currentEquation.getLastElement())) {
+            currentEquation.removeLastElement();
         }
-        return false;
+        System.out.println("clearEntry() invoked: " + "last element is:" + currentEquation.getLastElement() + "  list size: " + currentEquation.getSize());
     }
 
     public void addComma() {
-        if (validComma()) {
-            result.append(',');
+        switch (validComma()) {
+            case APPEND_TO_ELEMENT:
+                currentEquation.appendToElement(",");
+                break;
+            case NO_ACTION:
+                break;
         }
-        setLastChar();
+        System.out.println("addComma() invoked: " + "last element is:" + currentEquation.getLastElement() + "  list size: " + currentEquation.getSize());
     }
 
-    private boolean validComma() {
-        if (lastChar != null && result.length() > 0) {
-            String lastNumber = getLastStringAfterRegex(result.toString(), "[+\\-*/]");
-            if (lastNumber.matches("[0-9]+")) {
-                return !lastNumber.contains(",");
-            }
+    private CalcValidatorAction validComma() {
+        CalcValidatorAction action;
+        if (isNumber(currentEquation.getLastElement()) && !currentEquation.getLastElement().toString().contains(",")) {
+            action = CalcValidatorAction.APPEND_TO_ELEMENT;
+        } else {
+            action = CalcValidatorAction.NO_ACTION;
         }
-        return false;
+        System.out.println("validComma() invoked: " + action);
+        return action;
     }
 
     public void deleteLastCharacter() {
-        if (validDeletion()) {
-            result.deleteCharAt(result.length() - 1);
-            setLastChar();
+        switch (validDeletion()) {
+            case REMOVE_FROM_ELEMENT:
+                currentEquation.removeLastCharacter();
+                break;
+            case NO_ACTION:
+                break;
         }
     }
 
-    private boolean validDeletion() {
-        if (result.length() > 0) {
-            return true;
+    private CalcValidatorAction validDeletion() {
+        CalcValidatorAction action;
+        if (currentEquation.getSize() > 0) {
+            action = CalcValidatorAction.REMOVE_FROM_ELEMENT;
         } else {
-            return false;
+            action = CalcValidatorAction.NO_ACTION;
         }
-    }
-
-    private void setLastChar() {
-        if (result.length() > 0) {
-            lastChar = result.charAt(result.length() - 1);
-        } else {
-            lastChar = null;
-        }
-    }
-
-    private String getLastStringAfterRegex(String inputString, String regex) {
-        String[] array = inputString.split(regex);
-        return array[array.length - 1];
-    }
-
-    private int getLastNumberBeginningIndex() {
-        String lastNumber = getLastStringAfterRegex(result.toString(), "[-+*/]");
-        return result.length() - lastNumber.length() - 1;
+        System.out.println("validDeletion() invoked: " + action);
+        return action;
     }
 
     private boolean isNumber(String element) {
