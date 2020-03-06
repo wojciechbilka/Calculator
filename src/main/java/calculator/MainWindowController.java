@@ -53,8 +53,8 @@ public class MainWindowController {
     }
 
     @FXML
-    private void clear() {
-        validator.clearEquation();
+    private void clearEntry() {
+        validator.clearEntry();
         updateDisplay();
     }
 
@@ -97,7 +97,7 @@ public class MainWindowController {
         map.put("divide", ButtonIdentifier.DIVIDE);
         map.put("backspace", ButtonIdentifier.BACKSPACE);
         map.put("clearAll", ButtonIdentifier.CLEAR_ALL);
-        map.put("clear", ButtonIdentifier.CLEAR);
+        map.put("clearEntry", ButtonIdentifier.CLEAR_ENTRY);
         map.put("negate", ButtonIdentifier.NEGATE);
         map.put("equals", ButtonIdentifier.EQUALS);
         return map;

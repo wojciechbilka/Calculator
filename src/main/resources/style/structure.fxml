@@ -54,8 +54,8 @@
                     GridPane.columnIndex="0">
                 backspace
             </Button>
-            <Button fx:id="clear"
-                    onAction="#clear"
+            <Button fx:id="clearEntry"
+                    onAction="#clearEntry"
                     GridPane.columnSpan="1"
                     GridPane.rowSpan="1"
                     GridPane.rowIndex="0"
