@@ -56,6 +56,16 @@ public class Equation {
         }
     }
 
+    public void removeLastCharacter() {
+        if (equation.size() > 0) {
+            getLastElement().deleteCharAt(getLastElement().length() - 1);
+        }
+    }
+
+    public void deleteAllElements() {
+            equation.clear();
+    }
+
     public String buildString() {
         StringBuilder result = new StringBuilder();
         for (StringBuilder temp : equation) {
