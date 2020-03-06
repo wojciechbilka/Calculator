@@ -4,9 +4,7 @@ import java.util.ArrayList;
 
 public class CalcValidator {
 
-    private StringBuilder result = new StringBuilder();
-    private Character lastChar;
-    private Equation currentEquation;
+    private final Equation currentEquation;
 
 
     public CalcValidator() {
@@ -14,7 +12,6 @@ public class CalcValidator {
     }
 
     public CalcValidator(StringBuilder result, Equation currentEquation) {
-        this.result = result;
         this.currentEquation = currentEquation;
     }
 
@@ -23,7 +20,9 @@ public class CalcValidator {
     }
 
     public void negate() {
-        if (!currentEquation.isEmpty()) {
+        if (currentEquation.isEmpty()) {
+            currentEquation.addNewElement("-");
+        } else {
             String lastElement = currentEquation.getLastElement().toString();
             if (isNumber(lastElement)) {
                 if (lastElement.contains("-")) {
@@ -38,14 +37,14 @@ public class CalcValidator {
                     } else {
                         currentEquation.removeLastElement();
                     }
+                } else {
+                    currentEquation.addNewElement("-");
                 }
             } else {
                 currentEquation.addNewElement("-");
             }
-        } else {
-            currentEquation.addNewElement("-");
         }
-        System.out.println("negate() invoked: " + "last element is:" + currentEquation.getLastElement() + "  list size: " + currentEquation.getSize());
+        System.out.println("negate() invoked: " + "last element is: " + currentEquation.getLastElement() + "  list size: " + currentEquation.getSize());
     }
 
     public void addNumber(ButtonIdentifier btnId) {
@@ -59,7 +58,7 @@ public class CalcValidator {
                 currentEquation.addNewElement(btnId.getString());
                 break;
         }
-        System.out.println("addNumber() invoked: " + "last element is:" + currentEquation.getLastElement() + "  list size: " + currentEquation.getSize());
+        System.out.println("addNumber() invoked: " + "last element is: " + currentEquation.getLastElement() + "  list size: " + currentEquation.getSize());
     }
 
     private CalcValidatorAction validNumber(ButtonIdentifier btnId) {
@@ -107,14 +106,14 @@ public class CalcValidator {
                 currentEquation.addNewElement(btnId.getString());
                 break;
         }
-        System.out.println("addOperation() invoked: " + "last element is:" + currentEquation.getLastElement() + "  list size: " + currentEquation.getSize());
+        System.out.println("addOperation() invoked: " + "last element is: " + currentEquation.getLastElement() + "  list size: " + currentEquation.getSize());
     }
 
     private CalcValidatorAction validOperation(ButtonIdentifier btnId) {
         CalcValidatorAction action;
         switch (btnId) {
             case ADD, SUBTRACT, MULTIPLY, DIVIDE:
-                if (isOperation(currentEquation.getLastElement())) {
+                if (isOperation(currentEquation.getLastElement()) || endsWithComma(currentEquation.getLastElement())) {
                     action = CalcValidatorAction.NO_ACTION;
                 } else {
                     action = CalcValidatorAction.ADD_NEW_ELEMENT;
@@ -132,7 +131,7 @@ public class CalcValidator {
     // czy dodać tu również walidacje clearAll??? (chyba nie...)
     public void clearAll() {
         currentEquation.deleteAllElements();
-        System.out.println("clearAll() invoked: " + "last element is:" + currentEquation.getLastElement() + "  list size: " + currentEquation.getSize());
+        System.out.println("clearAll() invoked: " + "last element is: " + currentEquation.getLastElement() + "  list size: " + currentEquation.getSize());
 
     }
     // czy dodać tu również walidacje clearEntry???
@@ -140,7 +139,7 @@ public class CalcValidator {
         if (isNumber(currentEquation.getLastElement())) {
             currentEquation.removeLastElement();
         }
-        System.out.println("clearEntry() invoked: " + "last element is:" + currentEquation.getLastElement() + "  list size: " + currentEquation.getSize());
+        System.out.println("clearEntry() invoked: " + "last element is: " + currentEquation.getLastElement() + "  list size: " + currentEquation.getSize());
     }
 
     public void addComma() {
@@ -151,7 +150,7 @@ public class CalcValidator {
             case NO_ACTION:
                 break;
         }
-        System.out.println("addComma() invoked: " + "last element is:" + currentEquation.getLastElement() + "  list size: " + currentEquation.getSize());
+        System.out.println("addComma() invoked: " + "last element is: " + currentEquation.getLastElement() + "  list size: " + currentEquation.getSize());
     }
 
     private CalcValidatorAction validComma() {
@@ -170,6 +169,9 @@ public class CalcValidator {
             case REMOVE_FROM_ELEMENT:
                 currentEquation.removeLastCharacter();
                 break;
+            case REMOVE_ENTIRE_ELEMENT:
+                currentEquation.removeLastElement();
+                break;
             case NO_ACTION:
                 break;
         }
@@ -178,7 +180,11 @@ public class CalcValidator {
     private CalcValidatorAction validDeletion() {
         CalcValidatorAction action;
         if (currentEquation.getSize() > 0) {
-            action = CalcValidatorAction.REMOVE_FROM_ELEMENT;
+            if(currentEquation.getLastElement().length() > 1) {
+                action = CalcValidatorAction.REMOVE_FROM_ELEMENT;
+            } else {
+                action = CalcValidatorAction.REMOVE_ENTIRE_ELEMENT;
+            }
         } else {
             action = CalcValidatorAction.NO_ACTION;
         }
@@ -212,6 +218,16 @@ public class CalcValidator {
     private boolean isOperation(StringBuilder element) {
         if (element != null) {
             if (element.toString().length() == 1 && element.toString().matches("[-+/*]")) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private boolean endsWithComma(StringBuilder element) {
+        if (element != null) {
+            String stringElement = element.toString();
+            if (stringElement.charAt(stringElement.length() - 1) == ',') {
                 return true;
             }
         }
