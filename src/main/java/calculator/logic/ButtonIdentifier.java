@@ -19,7 +19,7 @@ public enum ButtonIdentifier {
     DIVIDE("/"),
     BACKSPACE("\b"),
     CLEAR_ALL("c"),
-    CLEAR("c"),
+    CLEAR_ENTRY("c"),
     NEGATE("\u00B1"),
     EQUALS("=");
 

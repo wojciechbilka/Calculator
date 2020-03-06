@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/calculator/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/MainWindowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/calculator/logic/ButtonIdentifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/logic/ButtonIdentifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/logic/CalcValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/logic/CalcValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/calculator/logic/Equation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/logic/Equation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/style/structure.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/style/structure.fxml" afterDir="false" />
     </list>
@@ -127,7 +126,7 @@
       <workItem from="1583333562583" duration="2537000" />
       <workItem from="1583399573536" duration="17286000" />
       <workItem from="1583435564732" duration="1021000" />
-      <workItem from="1583496281020" duration="3666000" />
+      <workItem from="1583496281020" duration="4603000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit with .gitignore">
       <created>1583325047678</created>
@@ -262,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583416233475</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Final touches (modifying rest of methods to work proper with Equation class)">
+      <created>1583502229525</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1583502229525</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,7 +293,8 @@
     <MESSAGE value="Add new enum for proper messages from valid methods." />
     <MESSAGE value="Changed ButtonIdentifier field to String" />
     <MESSAGE value="Modifications according new Equation concept" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modifications according new Equation concept" />
+    <MESSAGE value="Final touches (modifying rest of methods to work proper with Equation class)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final touches (modifying rest of methods to work proper with Equation class)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582976047712">
@@ -302,10 +309,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1583327264301" />
-    <state x="524" y="120" key="CommitChangelistDialog2" timestamp="1583416233217">
+    <state x="524" y="120" key="CommitChangelistDialog2" timestamp="1583502229172">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="524" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1583416233217" />
+    <state x="524" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1583502229172" />
     <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1583326688303">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
