@@ -199,7 +199,7 @@
                 +/-
             </Button>
             <Button fx:id="equals"
-                    onAction="#result"
+                    onAction="#getResult"
                     GridPane.columnSpan="1"
                     GridPane.rowSpan="1"
                     GridPane.rowIndex="4"
