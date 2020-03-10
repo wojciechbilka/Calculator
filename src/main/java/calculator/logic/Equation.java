@@ -1,17 +1,14 @@
 package calculator.logic;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.math.BigDecimal;
+import java.util.*;
 
 public class Equation {
 
     private List<StringBuilder> equation;
+    private EquationExecutor executor = new EquationExecutor();
 
     public Equation() {
-        initializeEquation();
-    }
-
-    private void initializeEquation() {
         equation = new ArrayList<StringBuilder>();
     }
 
@@ -63,7 +60,7 @@ public class Equation {
     }
 
     public void deleteAllElements() {
-            equation.clear();
+        equation.clear();
     }
 
     public String buildString() {
@@ -74,11 +71,112 @@ public class Equation {
         return result.toString();
     }
 
+    public void computeResult() {
+        executor.computeEquation();
+    }
+
+    public List<String> getNumbersList() {
+        executor.updateLists();
+        return executor.getNumbersList();
+    }
+
     public int getSize() {
-       return equation.size();
+        return equation.size();
     }
 
     public boolean isEmpty() {
-       return equation.isEmpty();
+        return equation.isEmpty();
+    }
+
+
+    private class EquationExecutor {
+        private List<String> numbersList;
+        private List<String> operationsList;
+
+        private void updateLists() {
+            Iterator<StringBuilder> iterator = equation.iterator();
+            List<String> newNumbersList = new ArrayList<>();
+            List<String> newOperationsList = new ArrayList<>();
+            String element;
+
+            while (iterator.hasNext()) {
+                element = iterator.next().toString();
+                if (element.matches(".*[0-9]+.*")) {
+                    newNumbersList.add(element);
+                } else if (element.length() == 1 && element.matches("[-+/*]")) {
+                    newOperationsList.add(element);
+                }
+            }
+            numbersList = newNumbersList;
+            operationsList = newOperationsList;
+        }
+
+        private void computeEquation() {
+            updateLists();
+            while (operationsList.size() > 0) {
+                executeOperation();
+            }
+            equation.clear();
+            equation.add(new StringBuilder(numbersList.get(0)));
+
+        }
+
+        private void executeOperation() {
+            int index = getOperationIndex();
+            BigDecimal result;
+            if(index != -1) {
+                switch (operationsList.get(index)) {
+                    case "/":
+                        calculate(index, MathematicalOperation.DIVIDE);
+                        break;
+                    case "*":
+                        calculate(index, MathematicalOperation.MULTIPLY);
+                        break;
+                    case "-":
+                        calculate(index, MathematicalOperation.SUBTRACT);
+                        break;
+                    case "+":
+                        calculate(index, MathematicalOperation.ADD);
+                        break;
+                }
+            }
+        }
+
+        private int getOperationIndex() {
+            int index = 0;
+            for(String element : operationsList) {
+                if(element.matches("[/*]")) {
+                    return index;
+                }
+                index++;
+            }
+            index = 0;
+            for(String element : operationsList) {
+                if(element.matches("[-+]")) {
+                    return index;
+                }
+                index++;
+            }
+            return -1;
+        }
+
+        private void calculate(int indexOfOperation, MathematicalOperation operation) {
+            BigDecimal result;
+            if(numbersList.size() > (indexOfOperation + 1)) {
+                result = operation.calculate(new BigDecimal(numbersList.get(indexOfOperation)), new BigDecimal(numbersList.get(indexOfOperation + 1)));
+                operationsList.remove(indexOfOperation);
+                numbersList.remove(indexOfOperation);
+                numbersList.remove(indexOfOperation);
+                numbersList.add(indexOfOperation, result.toString());
+            }
+        }
+
+        private List<String> getNumbersList() {
+            return new ArrayList<>(numbersList);
+        }
+
+        private List<String> getOperationsList() {
+            return new ArrayList<>(operationsList);
+        }
     }
 }
