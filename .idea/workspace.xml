@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee152eac-30ce-47bd-a757-434d1253144e" name="Default Changelist" comment="">
+    <list default="true" id="ee152eac-30ce-47bd-a757-434d1253144e" name="Default Changelist" comment="Quickfix for validDeletion method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/MainWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/logic/ButtonIdentifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/logic/ButtonIdentifier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/calculator/logic/CalcValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/logic/CalcValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/logic/CalcValidatorAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/logic/CalcValidatorAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/logic/Equation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/logic/Equation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/logic/ResultAnalyzer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/style/structure.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/style/structure.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +21,8 @@
       <list>
         <option value="CSS File" />
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -123,7 +129,9 @@
       <workItem from="1583333562583" duration="2537000" />
       <workItem from="1583399573536" duration="17286000" />
       <workItem from="1583435564732" duration="1021000" />
-      <workItem from="1583496281020" duration="8391000" />
+      <workItem from="1583496281020" duration="8452000" />
+      <workItem from="1583583754386" duration="980000" />
+      <workItem from="1583672740950" duration="17524000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit with .gitignore">
       <created>1583325047678</created>
@@ -286,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583502698409</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Quickfix for validDeletion method">
+      <created>1583509284620</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1583509284620</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,9 +330,14 @@
     <MESSAGE value="Change Clear to Clear Entry (more precise description)" />
     <MESSAGE value="Add removeLastCharacter method" />
     <MESSAGE value="Modifying method according to Equation class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modifying method according to Equation class" />
+    <MESSAGE value="Quickfix for validDeletion method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Quickfix for validDeletion method" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="690" y="279" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1583683829727">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="690" y="279" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583683829727" />
     <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582976047712">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -330,30 +350,34 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1583327264301" />
-    <state x="524" y="120" key="CommitChangelistDialog2" timestamp="1583502698217">
+    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583684150605">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="524" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1583502698217" />
+    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583684150605" />
+    <state x="836" y="87" key="CommitChangelistDialog2" timestamp="1583584043129">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="836" y="87" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1583584043129" />
     <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1583326688303">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1583326688303" />
-    <state width="938" height="280" key="GridCell.Tab.0.bottom" timestamp="1583507624723">
+    <state width="938" height="280" key="GridCell.Tab.0.bottom" timestamp="1583691194559">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="938" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1583507624723" />
-    <state width="938" height="280" key="GridCell.Tab.0.center" timestamp="1583507624723">
+    <state width="938" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1583691194559" />
+    <state width="938" height="280" key="GridCell.Tab.0.center" timestamp="1583691194559">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="938" height="280" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1583507624723" />
-    <state width="938" height="280" key="GridCell.Tab.0.left" timestamp="1583507624723">
+    <state width="938" height="280" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1583691194559" />
+    <state width="938" height="280" key="GridCell.Tab.0.left" timestamp="1583691194559">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="938" height="280" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1583507624723" />
-    <state width="938" height="280" key="GridCell.Tab.0.right" timestamp="1583507624723">
+    <state width="938" height="280" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1583691194559" />
+    <state width="938" height="280" key="GridCell.Tab.0.right" timestamp="1583691194559">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="938" height="280" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1583507624723" />
+    <state width="938" height="280" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1583691194559" />
     <state width="938" height="346" key="GridCell.Tab.1.bottom" timestamp="1583261795249">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -374,14 +398,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="440" y="98" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1582984921494" />
-    <state x="552" y="245" key="Vcs.Push.Dialog.v2" timestamp="1583503228943">
+    <state x="552" y="245" key="Vcs.Push.Dialog.v2" timestamp="1583584051068">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="245" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1583503228943" />
-    <state x="655" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1583496388793">
+    <state x="552" y="245" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1583584051068" />
+    <state x="655" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1583863608047">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="655" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583496388793" />
+    <state x="655" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583863608047" />
     <state x="769" y="441" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583499099164">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
