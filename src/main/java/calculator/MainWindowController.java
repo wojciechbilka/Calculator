@@ -2,13 +2,11 @@ package calculator;
 
 import calculator.logic.ButtonIdentifier;
 import calculator.logic.CalcValidator;
-import calculator.logic.ResultAnalyzer;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
-import javax.swing.*;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -19,8 +17,8 @@ public class MainWindowController {
 
     @FXML
     private Label display;
+
     @FXML
-    private Button change_text;
     public Button backspace;
 
     @FXML
@@ -65,9 +63,9 @@ public class MainWindowController {
     }
 
     @FXML
-    private void result() {
-        ResultAnalyzer result = new ResultAnalyzer(validator.getResult());
-        result.parse();
+    private void getResult() {
+        validator.calculateResult();
+        updateDisplay();
     }
     private ButtonIdentifier getButtonIdentifier(ActionEvent event){
         Button sourceButton = (Button) event.getSource();
