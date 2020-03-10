@@ -1,11 +1,8 @@
 package calculator.logic;
 
-import java.util.ArrayList;
-
 public class CalcValidator {
 
     private final Equation currentEquation;
-
 
     public CalcValidator() {
         this.currentEquation = new Equation();
@@ -70,7 +67,7 @@ public class CalcValidator {
                 } else {
                     String lastElement = currentEquation.getLastElement().toString();
                     if (isNumber(lastElement)) {
-                        if (lastElement.charAt(0) == '0' && !lastElement.contains(",")) {
+                        if ((lastElement.charAt(0) == '0' || (lastElement.charAt(0) == '-' && lastElement.charAt(1) == '0')) && !lastElement.contains(".")) {
                             action = CalcValidatorAction.NO_ACTION;
                         } else {
                             action = CalcValidatorAction.APPEND_TO_ELEMENT;
@@ -134,6 +131,7 @@ public class CalcValidator {
         System.out.println("clearAll() invoked: " + "last element is: " + currentEquation.getLastElement() + "  list size: " + currentEquation.getSize());
 
     }
+
     // czy dodać tu również walidacje clearEntry???
     public void clearEntry() {
         if (isNumber(currentEquation.getLastElement())) {
@@ -145,7 +143,7 @@ public class CalcValidator {
     public void addComma() {
         switch (validComma()) {
             case APPEND_TO_ELEMENT:
-                currentEquation.appendToElement(",");
+                currentEquation.appendToElement(".");
                 break;
             case NO_ACTION:
                 break;
@@ -155,7 +153,7 @@ public class CalcValidator {
 
     private CalcValidatorAction validComma() {
         CalcValidatorAction action;
-        if (isNumber(currentEquation.getLastElement()) && !currentEquation.getLastElement().toString().contains(",")) {
+        if (isNumber(currentEquation.getLastElement()) && !currentEquation.getLastElement().toString().contains(".")) {
             action = CalcValidatorAction.APPEND_TO_ELEMENT;
         } else {
             action = CalcValidatorAction.NO_ACTION;
@@ -180,7 +178,7 @@ public class CalcValidator {
     private CalcValidatorAction validDeletion() {
         CalcValidatorAction action;
         if (currentEquation.getSize() > 0) {
-            if(currentEquation.getLastElement().length() > 1) {
+            if (currentEquation.getLastElement().length() > 1) {
                 action = CalcValidatorAction.REMOVE_FROM_ELEMENT;
             } else {
                 action = CalcValidatorAction.REMOVE_ENTIRE_ELEMENT;
@@ -189,6 +187,28 @@ public class CalcValidator {
             action = CalcValidatorAction.NO_ACTION;
         }
         System.out.println("validDeletion() invoked: " + action);
+        return action;
+    }
+
+    public void calculateResult() {
+        switch (validCalculateResult()) {
+            case NO_ACTION:
+                break;
+            case CALC_RESULT:
+                currentEquation.computeResult();
+                break;
+        }
+        System.out.println("calculateResult invoked: " + "last element is: " + currentEquation.getLastElement() + "  list size: " + currentEquation.getSize());
+    }
+
+    private CalcValidatorAction validCalculateResult() {
+        CalcValidatorAction action;
+        if (currentEquation.getNumbersList().size() > 1) {
+            action = CalcValidatorAction.CALC_RESULT;
+        } else {
+            action = CalcValidatorAction.NO_ACTION;
+        }
+        System.out.println("validCalculateResult() invoked: " + action);
         return action;
     }
 
@@ -208,6 +228,7 @@ public class CalcValidator {
         return false;
     }
 
+    // regex generowac jako pattern? globalna stała + mniej operacji (-->przetwarzanie stringa na regex...)
     private boolean isOperation(String element) {
         if (element != null && element.length() == 1 && element.matches("[-+/*]")) {
             return true;
@@ -227,7 +248,7 @@ public class CalcValidator {
     private boolean endsWithComma(StringBuilder element) {
         if (element != null) {
             String stringElement = element.toString();
-            if (stringElement.charAt(stringElement.length() - 1) == ',') {
+            if (stringElement.charAt(stringElement.length() - 1) == '.') {
                 return true;
             }
         }

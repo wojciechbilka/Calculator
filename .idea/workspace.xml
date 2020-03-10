@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/calculator/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/MainWindowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/calculator/logic/CalcValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/logic/CalcValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/logic/CalcValidatorAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/logic/CalcValidatorAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/calculator/logic/Equation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/logic/Equation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/style/structure.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/style/structure.fxml" afterDir="false" />
     </list>
@@ -130,7 +129,7 @@
       <workItem from="1583496281020" duration="8452000" />
       <workItem from="1583583754386" duration="980000" />
       <workItem from="1583672740950" duration="17524000" />
-      <workItem from="1583863596357" duration="230000" />
+      <workItem from="1583863596357" duration="285000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit with .gitignore">
       <created>1583325047678</created>
@@ -314,14 +313,20 @@
       <option name="project" value="LOCAL" />
       <updated>1583863795781</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Add new action for &quot;=&quot; button">
+      <created>1583863862003</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1583863862003</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Init Commit with .gitignore" />
     <MESSAGE value="Modified .gitignore" />
     <MESSAGE value="Add .idea files" />
     <MESSAGE value="Add style files (.fxml and css + image)" />
@@ -346,7 +351,8 @@
     <MESSAGE value="Quickfix for validDeletion method" />
     <MESSAGE value="Delete ResultAnalyzer.class" />
     <MESSAGE value="Changed &quot;,&quot; for &quot;.&quot; (easier to interprate for BigDecimal)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed &quot;,&quot; for &quot;.&quot; (easier to interprate for BigDecimal)" />
+    <MESSAGE value="Add new action for &quot;=&quot; button" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new action for &quot;=&quot; button" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="279" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1583683829727">
@@ -369,10 +375,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583684150605" />
-    <state x="836" y="87" key="CommitChangelistDialog2" timestamp="1583863812681">
+    <state x="836" y="87" key="CommitChangelistDialog2" timestamp="1583863874733">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="836" y="87" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1583863812681" />
+    <state x="836" y="87" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1583863874733" />
     <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1583326688303">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
