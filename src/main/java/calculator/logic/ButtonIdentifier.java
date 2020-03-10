@@ -12,7 +12,7 @@ public enum ButtonIdentifier {
     SEVEN("7"),
     EIGHT("8"),
     NINE("9"),
-    COMMA(","),
+    COMMA("."),
     ADD("+"),
     SUBTRACT("-"),
     MULTIPLY("*"),
