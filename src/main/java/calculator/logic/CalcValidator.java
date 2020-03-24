@@ -61,7 +61,7 @@ public class CalcValidator {
     private CalcValidatorAction validNumber(ButtonIdentifier btnId) {
         CalcValidatorAction action;
         switch (btnId) {
-            case ZERO, ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE:
+            case ZERO://, ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE:
                 if (currentEquation.isEmpty()) {
                     action = CalcValidatorAction.ADD_NEW_ELEMENT;
                 } else {
@@ -109,7 +109,7 @@ public class CalcValidator {
     private CalcValidatorAction validOperation(ButtonIdentifier btnId) {
         CalcValidatorAction action;
         switch (btnId) {
-            case ADD, SUBTRACT, MULTIPLY, DIVIDE:
+            case ADD://, SUBTRACT, MULTIPLY, DIVIDE:
                 if (isOperation(currentEquation.getLastElement()) || endsWithComma(currentEquation.getLastElement())) {
                     action = CalcValidatorAction.NO_ACTION;
                 } else {
