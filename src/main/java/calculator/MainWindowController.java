@@ -7,28 +7,23 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class MainWindowController {
 
     private final CalcValidator validator = new CalcValidator();
-    private Map<String, ButtonIdentifier> buttonMap = initializeButtonsMap();
 
     @FXML
     private Label display;
 
     @FXML
-    public Button backspace;
-
-    @FXML
     private void numberPressed(ActionEvent event) {
-        validator.addNumber(getButtonIdentifier(event));
+        ButtonIdentifier buttonIdentifier = ButtonIdentifier.getButtonIdentifier(getButtonId(event));
+        validator.addNumber(buttonIdentifier);
         updateDisplay();
     }
     @FXML
     private void operationPressed(ActionEvent event) {
-        validator.addOperation(getButtonIdentifier(event));
+        ButtonIdentifier buttonIdentifier = ButtonIdentifier.getButtonIdentifier(getButtonId(event));
+        validator.addOperation(buttonIdentifier);
         updateDisplay();
     }
 
@@ -67,37 +62,13 @@ public class MainWindowController {
         validator.calculateResult();
         updateDisplay();
     }
-    private ButtonIdentifier getButtonIdentifier(ActionEvent event){
+
+    private String getButtonId(ActionEvent event){
         Button sourceButton = (Button) event.getSource();
-        return buttonMap.get(sourceButton.getId());
+        return sourceButton.getId();
     }
 
     private void updateDisplay() {
         display.setText(validator.getResult());
-    }
-
-    private Map<String, ButtonIdentifier> initializeButtonsMap() {
-        Map<String, ButtonIdentifier> map = new HashMap<>();
-        map.put("zero", ButtonIdentifier.ZERO);
-        map.put("one", ButtonIdentifier.ONE);
-        map.put("two", ButtonIdentifier.TWO);
-        map.put("three", ButtonIdentifier.THREE);
-        map.put("four", ButtonIdentifier.FOUR);
-        map.put("five", ButtonIdentifier.FIVE);
-        map.put("six", ButtonIdentifier.SIX);
-        map.put("seven", ButtonIdentifier.SEVEN);
-        map.put("eight", ButtonIdentifier.EIGHT);
-        map.put("nine", ButtonIdentifier.NINE);
-        map.put("comma", ButtonIdentifier.COMMA);
-        map.put("add", ButtonIdentifier.ADD);
-        map.put("subtract", ButtonIdentifier.SUBTRACT);
-        map.put("multiply", ButtonIdentifier.MULTIPLY);
-        map.put("divide", ButtonIdentifier.DIVIDE);
-        map.put("backspace", ButtonIdentifier.BACKSPACE);
-        map.put("clearAll", ButtonIdentifier.CLEAR_ALL);
-        map.put("clearEntry", ButtonIdentifier.CLEAR_ENTRY);
-        map.put("negate", ButtonIdentifier.NEGATE);
-        map.put("equals", ButtonIdentifier.EQUALS);
-        return map;
     }
 }
