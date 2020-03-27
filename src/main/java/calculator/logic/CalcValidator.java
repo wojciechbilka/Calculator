@@ -60,33 +60,31 @@ public class CalcValidator {
 
     private CalcValidatorAction validNumber(ButtonIdentifier btnId) {
         CalcValidatorAction action;
-        switch (btnId) {
-            case ZERO://, ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE:
-                if (currentEquation.isEmpty()) {
-                    action = CalcValidatorAction.ADD_NEW_ELEMENT;
-                } else {
-                    String lastElement = currentEquation.getLastElement().toString();
-                    if (isNumber(lastElement)) {
-                        if ((lastElement.charAt(0) == '0' || (lastElement.charAt(0) == '-' && lastElement.charAt(1) == '0')) && !lastElement.contains(".")) {
-                            action = CalcValidatorAction.NO_ACTION;
-                        } else {
-                            action = CalcValidatorAction.APPEND_TO_ELEMENT;
-                        }
-                    } else if (isOperation(lastElement) && lastElement.contains("-")) {
-                        if (isNumber(currentEquation.getOneBeforeLastElement())) {
-                            action = CalcValidatorAction.ADD_NEW_ELEMENT;
-                        } else {
-                            action = CalcValidatorAction.APPEND_TO_ELEMENT;
-                        }
+        if (btnId.isNumberButton()) {
+            if (currentEquation.isEmpty()) {
+                action = CalcValidatorAction.ADD_NEW_ELEMENT;
+            } else {
+                String lastElement = currentEquation.getLastElement().toString();
+                if (isNumber(lastElement)) {
+                    if ((lastElement.charAt(0) == '0' || (lastElement.charAt(0) == '-' && lastElement.charAt(1) == '0')) && !lastElement.contains(".")) {
+                        action = CalcValidatorAction.NO_ACTION;
                     } else {
-                        action = CalcValidatorAction.ADD_NEW_ELEMENT;
+                        action = CalcValidatorAction.APPEND_TO_ELEMENT;
                     }
+                } else if (isOperation(lastElement) && lastElement.contains("-")) {
+                    if (isNumber(currentEquation.getOneBeforeLastElement())) {
+                        action = CalcValidatorAction.ADD_NEW_ELEMENT;
+                    } else {
+                        action = CalcValidatorAction.APPEND_TO_ELEMENT;
+                    }
+                } else {
+                    action = CalcValidatorAction.ADD_NEW_ELEMENT;
                 }
-                break;
-            default:
-                action = CalcValidatorAction.NO_ACTION;
-                System.out.println("validNumber() invoked: " + action + "ATTENTION! default switch case used!");
-                return action;
+            }
+        } else {
+            action = CalcValidatorAction.NO_ACTION;
+            System.out.println("validNumber() invoked: " + action + "ATTENTION! default switch case used!");
+            return action;
         }
         System.out.println("validNumber() invoked: " + action);
         return action;
@@ -108,31 +106,26 @@ public class CalcValidator {
 
     private CalcValidatorAction validOperation(ButtonIdentifier btnId) {
         CalcValidatorAction action;
-        switch (btnId) {
-            case ADD://, SUBTRACT, MULTIPLY, DIVIDE:
-                if (isOperation(currentEquation.getLastElement()) || endsWithComma(currentEquation.getLastElement())) {
-                    action = CalcValidatorAction.NO_ACTION;
-                } else {
-                    action = CalcValidatorAction.ADD_NEW_ELEMENT;
-                }
-                break;
-            default:
+        if (btnId.isOperationButton()) {
+            if (isOperation(currentEquation.getLastElement()) || endsWithComma(currentEquation.getLastElement())) {
                 action = CalcValidatorAction.NO_ACTION;
-                System.out.println("validOperation() invoked: " + action + "ATTENTION! default switch case used!");
-                return action;
+            } else {
+                action = CalcValidatorAction.ADD_NEW_ELEMENT;
+            }
+        } else {
+            action = CalcValidatorAction.NO_ACTION;
+            System.out.println("validOperation() invoked: " + action + "ATTENTION! default switch case used!");
+            return action;
         }
         System.out.println("validOperation() invoked: " + action);
         return action;
     }
 
-    // czy dodać tu również walidacje clearAll??? (chyba nie...)
     public void clearAll() {
         currentEquation.deleteAllElements();
         System.out.println("clearAll() invoked: " + "last element is: " + currentEquation.getLastElement() + "  list size: " + currentEquation.getSize());
-
     }
 
-    // czy dodać tu również walidacje clearEntry???
     public void clearEntry() {
         if (isNumber(currentEquation.getLastElement())) {
             currentEquation.removeLastElement();
@@ -141,12 +134,8 @@ public class CalcValidator {
     }
 
     public void addComma() {
-        switch (validComma()) {
-            case APPEND_TO_ELEMENT:
-                currentEquation.appendToElement(".");
-                break;
-            case NO_ACTION:
-                break;
+        if (validComma().equals(CalcValidatorAction.APPEND_TO_ELEMENT)) {
+            currentEquation.appendToElement(".");
         }
         System.out.println("addComma() invoked: " + "last element is: " + currentEquation.getLastElement() + "  list size: " + currentEquation.getSize());
     }
@@ -191,12 +180,8 @@ public class CalcValidator {
     }
 
     public void calculateResult() {
-        switch (validCalculateResult()) {
-            case NO_ACTION:
-                break;
-            case CALC_RESULT:
-                currentEquation.computeResult();
-                break;
+        if (validCalculateResult().equals(CalcValidatorAction.CALC_RESULT)) {
+            currentEquation.computeResult();
         }
         System.out.println("calculateResult invoked: " + "last element is: " + currentEquation.getLastElement() + "  list size: " + currentEquation.getSize());
     }
@@ -228,7 +213,6 @@ public class CalcValidator {
         return false;
     }
 
-    // regex generowac jako pattern? globalna stała + mniej operacji (-->przetwarzanie stringa na regex...)
     private boolean isOperation(String element) {
         if (element != null && element.length() == 1 && element.matches("[-+/*]")) {
             return true;

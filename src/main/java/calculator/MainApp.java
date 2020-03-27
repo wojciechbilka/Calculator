@@ -23,7 +23,6 @@ public class MainApp extends Application {
         Scene scene = new Scene(root);
         scene.getStylesheets().add(getClass().getResource("/style/global_stylesheet.css").toExternalForm());
 
-
         stage.setScene(scene);
         InputStream iconStream = getClass().getResourceAsStream("/images/pi.png");
         Image image = new Image(iconStream);
