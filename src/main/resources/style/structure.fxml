@@ -21,7 +21,7 @@
                 <Insets top="5" bottom="5" left="5" right="5"/>
             </padding>
             <Label fx:id="display" textAlignment="RIGHT" wrapText="true">
-                Result
+                0
             </Label>
         </VBox>
 
