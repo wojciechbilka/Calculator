@@ -188,7 +188,8 @@ public class CalcValidator {
 
     private CalcValidatorAction validCalculateResult() {
         CalcValidatorAction action;
-        if (currentEquation.getNumbersList().size() > 1) {
+        System.out.println(currentEquation.buildString());
+        if (currentEquation.getNumbersList().size() > 1 && !currentEquation.buildString().matches("\\S*[\\/0][^.,]*")) {
             action = CalcValidatorAction.CALC_RESULT;
         } else {
             action = CalcValidatorAction.NO_ACTION;
